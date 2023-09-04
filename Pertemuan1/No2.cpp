@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-#define ARR_SIZE 100
-
 int main() {
+    const int ARR_SIZE = 100;
+
     int arr1[ARR_SIZE], arr1_length;
     int arr2[ARR_SIZE], arr2_length;
     int arr3[ARR_SIZE];
