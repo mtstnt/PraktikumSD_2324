@@ -55,15 +55,6 @@ public:
         t->next = nullptr;
         tail = t;
         delete to_delete;
-
-        return value;
-    }
-
-    int pop_front() {
-        Node* current = head;
-        head = head->next;
-        int value = current->value;
-        delete current;
         return value;
     }
 
@@ -90,11 +81,6 @@ int main() {
     cout << "\n";
     int pop1 = ll.pop_back();
     cout << "Pop back: " << pop1 << "\n";
-    ll.print();
-
-    cout << "\n";
-    int pop2 = ll.pop_front();
-    cout << "Pop front: " << pop2 << "\n";
     ll.print();
 
     return 0;
