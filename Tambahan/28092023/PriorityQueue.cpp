@@ -62,7 +62,7 @@ public:
             //  masukkan di depannya.
             if (t->priority < priority) {
                 if (prev == nullptr) {
-                    // Kalau berhenti pas prev masih nullptr, berarti dia lbh kecil dari head.
+                    // Kalau berhenti pas prev masih nullptr, berarti dia lbh tinggi prioritynya dari head.
                     n->next = head;
                     head = n;
                 } else {
@@ -75,7 +75,7 @@ public:
             prev = t;
             t = t->next;
         }
-        // Kalau tidak masuk di bagian manapun, masuknya di paling belakang.
+        // Kalau tidak masuk di bagian tengah, masuknya di paling belakang.
         prev->next = n;
     }
 
